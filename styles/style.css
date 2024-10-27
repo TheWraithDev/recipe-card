@@ -93,7 +93,6 @@ main {
     flex-direction: column;
     gap: 32px;
     background: var(--clr-white);
-    /* padding: 50px; */
     border-radius: 10px;
 }
 
@@ -133,9 +132,22 @@ main {
     color: var(--clr-stone-600);
 }
 
+.nutrition_container > p {
+    margin: 15px;
+}
+
 .nutrition_table > dl{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+}
+
+.nutrition_table > dl  {
+    color: var(--clr-stone-600);
+}
+
+.nutrition_table > dl > dd {
+    color: var(--clr-brown-800);
 }
 
 
@@ -182,6 +194,3 @@ main {
 }
 
 
-header {
-    border: solid red 1px;
-}
