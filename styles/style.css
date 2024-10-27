@@ -148,12 +148,15 @@ main {
 /* Styles for Mobile Phones */
 @media only screen and (max-width: 375px) {
     main {
-        max-width: 90%;  /* Usually want wider on mobile */
-        
+        max-width: 100%;  /* Usually want wider on mobile */
     }
+
     .header_image {
         min-width: 100%;
+
+        padding: 0;
     }
+    
 }
 
 /* Tablet styles (376px to 999px) */
@@ -173,25 +176,6 @@ main {
 }
 
 
-/* header {
+header {
     border: solid red 1px;
 }
-main {
-    border: solid green 1px;
-}
-.recipe_name_description_container {
-    border: solid blue 1px;
-}
-.preperation_time_container {
-    border: solid yellowgreen 1px;
-}
-.ingredients_container {
-    border: solid purple 1px;
-}
-.instructions_container {
-    border: solid orange 1px;
-}
-
-.nutrition_container {
-    border: solid sienna 1px;
-} */
