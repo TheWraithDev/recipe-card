@@ -91,10 +91,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin: 0px;
     background: var(--clr-white);
     padding: 50px;
     border-radius: 10px;
+    margin: auto;
 }
 
 .header_image {
@@ -130,26 +130,50 @@ main {
     color: var(--clr-brown-800);
 }
 
+.nutrition_container > h3 {
+    color: var(--clr-brown-800);
+}
+
+.nutrition_container > p {
+    color: var(--clr-stone-600);
+}
+
+.nutrition_table > dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
 /* Styles for Mobile Phones */
-@media only screen and (max-width:375px) {
-
+@media only screen and (max-width: 375px) {
+    main {
+        max-width: 90%;  /* Usually want wider on mobile */
+        
+    }
+    .header_image {
+        min-width: 100%;
+    }
 }
-/* Styles for tablets */
+
+/* Tablet styles (376px to 999px) */
 @media only screen and (min-width: 376px) and (max-width: 999px) {
-   main {
-    margin: 128px 76px;
-   }
-   header > img {
-    margin: 40px;
-   }
+    main {
+        max-width: 85%;
+       
+    }
 }
-/* Styles for desktops */
+
+/* Desktop styles (1000px and above) */
 @media only screen and (min-width: 1000px) {
-    
+    main {
+        max-width: 80%;
+      
+    }
 }
 
 
-header {
+/* header {
     border: solid red 1px;
 }
 main {
@@ -170,4 +194,4 @@ main {
 
 .nutrition_container {
     border: solid sienna 1px;
-}
+} */
