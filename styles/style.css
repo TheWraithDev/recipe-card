@@ -99,7 +99,7 @@ main > section {
     padding: 0 32px 16px 32px;
 }
 
-img {
+.header_image {
     margin: 0;
     max-width: 100%;
 }
