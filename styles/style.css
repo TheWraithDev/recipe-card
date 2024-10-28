@@ -92,7 +92,7 @@ main {
     flex-direction: column;
     gap: 40px;
     background: var(--clr-white);
-    max-width: 100%;
+    max-width: 55rem;
 }
 
 main > section {
