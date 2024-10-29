@@ -13,6 +13,16 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;     /* Inherit text color */
 }
 
+table {
+    border-collapse: collapse;    /* Removes default cell spacing */
+    border-spacing: 0;           /* Removes default cell spacing */
+}
+
+th, td {
+    padding: 0;                  /* Removes default padding */
+    border: none;               /* Removes default borders */
+}
+
 
 /* CSS Properties */
 
@@ -48,6 +58,8 @@ ul, ol {
     text-indent: 0.5em;
 }
 
+/* Font Packages */
+
 
 .text_preset_1 {
     font-family: var(--ff-primary);
@@ -80,6 +92,10 @@ ul, ol {
     font-size: 1rem;
 }
 
+
+
+/*General Layout */
+
 body {
     background-color: var(--clr-stone-150);
     display: flex;
@@ -111,6 +127,11 @@ main > section {
     gap: 16px;
 }
 
+
+
+
+/* Colors for fonts and such */
+
 .preperation_time_container > h3 {
     color: var(--clr-rose-800);
 }
@@ -139,23 +160,39 @@ main > section {
     color: var(--clr-stone-600);
 }
 
-.nutrition_container > p {
-    margin: 15px;
-}
-
-.nutrition_table > dl{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 25px;
-}
-
-.nutrition_table > dl  {
+.nutrition_table  tr th {
     color: var(--clr-stone-600);
 }
 
-.nutrition_table > dl > dd {
-    color: var(--clr-brown-800);
+.nutrition_table  tr  td {
+    color: var(--clr-rose-800);
 }
+
+
+
+
+
+
+
+/*Nutrition Table Styling */
+
+.nutrition_table td,
+.nutrition_table th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+} /* Space between the rows */
+
+.nutrition_table tr td {
+    text-align: center;
+}
+
+.nutrition_table {
+    width: 70%;
+} /* So it can be responsive to the main container*/
+
+
+
+/*Desktop Design*/
 
 @media only screen and (min-width: 750px) {
     main {
@@ -166,6 +203,7 @@ main > section {
         border-radius: 50px;
     }
 }
+
 
 
 
