@@ -108,7 +108,7 @@ main {
     flex-direction: column;
     gap: 40px;
     background: var(--clr-white);
-    max-width: 55rem;
+    max-width: 55rem; /* Can be 100% or 55rem - this is just so that it takes the full available space if 100% */
 }
 
 main > section {
@@ -117,7 +117,7 @@ main > section {
 
 .header_image {
     margin: 0;
-    max-width: 100%;
+    max-width: 100%; /* This ensures that it does not overflow the image container - i.e. it's parent element - it grows and expands with respect to the parent */
 }
 
 
