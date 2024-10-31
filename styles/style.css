@@ -1,217 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;         /* Remove default margins */
-    padding: 0;        /* Remove default padding */
-    font-size: inherit; /* Inherit font size from parent */
-    font-weight: normal; /* Reset font weight */
-    line-height: normal; /* Reset line height */
-    color: inherit;     /* Inherit text color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  font-size: inherit; /* Inherit font size from parent */
+  font-weight: normal; /* Reset font weight */
+  line-height: normal; /* Reset line height */
+  color: inherit; /* Inherit text color */
 }
 
 table {
-    border-collapse: collapse;    /* Removes default cell spacing */
-    border-spacing: 0;           /* Removes default cell spacing */
+  border-collapse: collapse; /* Removes default cell spacing */
+  border-spacing: 0; /* Removes default cell spacing */
 }
 
-th, td {
-    padding: 0;                  /* Removes default padding */
-    border: none;               /* Removes default borders */
+th,
+td {
+  padding: 0; /* Removes default padding */
+  border: none; /* Removes default borders */
 }
-
-
-
 
 /* CSS Properties */
 
 :root {
-    --ff-primary: 'Young Serif', sans-serif;
-    --ff-secondary: 'Outfit', sans-serif;
+  --ff-primary: 'Young Serif', sans-serif;
+  --ff-secondary: 'Outfit', sans-serif;
 
-    --clr-rose-800: #7A284E;
-    --clr-rose-50: #FFF7FB;
-    --clr-stone-900: #312E2C;
-    --clr-stone-600: #5F564D;
-    --clr-stone-150: #E3DDD7;
-    --clr-stone-100: #F3E5D7;
-    --clr-brown-800: #854632;
-    --clr-white: #FFFFFF;
+  --clr-rose-800: #7a284e;
+  --clr-rose-50: #fff7fb;
+  --clr-stone-900: #312e2c;
+  --clr-stone-600: #5f564d;
+  --clr-stone-150: #e3ddd7;
+  --clr-stone-100: #f3e5d7;
+  --clr-brown-800: #854632;
+  --clr-white: #ffffff;
 
-    --fw-regular: 400;
-    --fw-semibold: 600;
-    --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 }
 
 ul li::marker {
-    color: var(--clr-rose-800);
-    font-size: 0.75rem;
+  color: var(--clr-rose-800);
+  font-size: 0.75rem;
 }
 
 ul li::marker {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
-ul, ol {
-    list-style-position: inside;
-    text-indent: 0.5em;
+ul,
+ol {
+  list-style-position: inside;
+  text-indent: 0.5em;
 }
 
 /* Font Packages */
 
-
 .text_preset_1 {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: 2.5rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: 2.5rem;
 }
 
 .text_preset_2 {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: 1.75rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: 1.75rem;
 }
 
 .text_preset_3 {
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-semibold);
-    font-size: 1.25rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-semibold);
+  font-size: 1.25rem;
 }
 
 .text_preset_4 {
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-regular);
-    font-size: 1rem;
-    line-height: 1.5;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .text_preset_5 {
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-bold);
-    font-size: 1rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
 }
-
-
 
 /*General Layout */
 
 body {
-    background-color: var(--clr-stone-150);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--clr-stone-150);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background: var(--clr-white);
-    max-width: 55rem; /* Can be 100% or 55rem - this is just so that it takes the full available space if 100% */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: var(--clr-white);
+  max-width: 55rem; /* Can be 100% or 55rem - this is just so that it takes the full available space if 100% */
 }
 
 main > section {
-    padding: 0 32px 16px 32px;
+  padding: 0 32px 16px 32px;
 }
 
 .header_image {
-    margin: 0;
-    max-width: 100%; /* This ensures that it does not overflow the image container - i.e. it's parent element - it grows and expands with respect to the parent */
+  margin: 0;
+  max-width: 100%; /* This ensures that it does not overflow the image container - i.e. it's parent element - it grows and expands with respect to the parent */
 }
-
 
 .recipe_name_description_container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
-
-
 
 /* Colors for fonts and such */
 
 .preperation_subheading {
-    color: var(--clr-rose-800);
+  color: var(--clr-rose-800);
 }
 
 .preperation_list_item_style,
 .ingredients_list_item_style,
 .table_description {
-    color: var(--clr-stone-600);
+  color: var(--clr-stone-600);
 }
 
 .ingredients_subheading,
 .instructions_subheading,
 .nutrition_subheading {
-    color: var(--clr-brown-800);
+  color: var(--clr-brown-800);
 }
-
-
-
-
 
 /* Line Breaks between page and table styling */
 
-.ingredients_container, 
+.ingredients_container,
 .instructions_container {
-    border-bottom: solid 1px #E3DDD7;
+  border-bottom: solid 1px #e3ddd7;
 }
 
 .line_split {
-    border-bottom: solid 1px #E3DDD7;
+  border-bottom: solid 1px #e3ddd7;
 }
-
-
-
-
 
 /*Nutrition Table Styling */
 
 .nutrition_table td,
 .nutrition_table th {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 } /* Space between the rows */
 
 .nutrition_table tr td {
-    text-align: center;
+  text-align: center;
 }
 
-.nutrition_table  tr th {
-    color: var(--clr-stone-600);
+.nutrition_table tr th {
+  color: var(--clr-stone-600);
 }
 
-.nutrition_table  tr  td {
-    color: var(--clr-rose-800);
+.nutrition_table tr td {
+  color: var(--clr-rose-800);
 }
 
 .nutrition_table {
-    width: 70%;
+  width: 70%;
 } /* So it can be responsive to the main container*/
-
-
 
 /*Desktop Design*/
 
-@media only screen and (min-width: 46.875rem) {  /* 750px ÷ 16 */
-    main {
-        margin: 2.5rem;  /* 40px ÷ 16 */
-    }
-    .header_image {
-        padding: 1.625rem;  /* 26px ÷ 16 */
-        border-radius: 3.125rem;  /* 50px ÷ 16 */
-    }
+@media only screen and (min-width: 46.875rem) {
+  /* 750px ÷ 16 */
+  main {
+    margin: 2.5rem; /* 40px ÷ 16 */
+  }
+  .header_image {
+    padding: 1.625rem; /* 26px ÷ 16 */
+    border-radius: 3.125rem; /* 50px ÷ 16 */
+  }
 }
-
-
-
-
-
-
-
-
-
