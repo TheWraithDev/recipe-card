@@ -132,43 +132,36 @@ main > section {
 
 /* Colors for fonts and such */
 
-.preperation_time_container > h3 {
+.preperation_subheading {
     color: var(--clr-rose-800);
 }
 
-.preperation_time_container > ul > li {
+.preperation_list_item_style,
+.ingredients_list_item_style,
+.table_description {
     color: var(--clr-stone-600);
 }
 
-.ingredients_container > ul > li {
-    color: var(--clr-stone-600);
-}
-
-.ingredients_container > h3{
+.ingredients_subheading,
+.instructions_subheading,
+.nutrition_subheading {
     color: var(--clr-brown-800);
 }
 
-.instructions_container > h3{
-    color: var(--clr-brown-800);
+
+
+
+
+/* Line Breaks between page and table styling */
+
+.ingredients_container, 
+.instructions_container {
+    border-bottom: solid 1px #E3DDD7;
 }
 
-.nutrition_container > h3 {
-    color: var(--clr-brown-800);
+.line_split {
+    border-bottom: solid 1px #E3DDD7;
 }
-
-.nutrition_container > p {
-    color: var(--clr-stone-600);
-}
-
-.nutrition_table  tr th {
-    color: var(--clr-stone-600);
-}
-
-.nutrition_table  tr  td {
-    color: var(--clr-rose-800);
-}
-
-
 
 
 
@@ -186,6 +179,14 @@ main > section {
     text-align: center;
 }
 
+.nutrition_table  tr th {
+    color: var(--clr-stone-600);
+}
+
+.nutrition_table  tr  td {
+    color: var(--clr-rose-800);
+}
+
 .nutrition_table {
     width: 70%;
 } /* So it can be responsive to the main container*/
@@ -194,15 +195,17 @@ main > section {
 
 /*Desktop Design*/
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 46.875rem) {  /* 750px ÷ 16 */
     main {
-        margin: 40px;
+        margin: 2.5rem;  /* 40px ÷ 16 */
     }
     .header_image {
-        padding: 26px;
-        border-radius: 50px;
+        padding: 1.625rem;  /* 26px ÷ 16 */
+        border-radius: 3.125rem;  /* 50px ÷ 16 */
     }
 }
+
+
 
 
 
